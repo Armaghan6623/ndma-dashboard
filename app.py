@@ -1,10 +1,8 @@
-from flask import Flask
+import streamlit as st
 
-app = Flask(__name__)
+st.title("NDMA Disaster Intelligence Dashboard")
+st.subheader("Prototype - v1.0")
 
-@app.route("/")
-def home():
-    return "NDMA Dashboard Running!"
+st.write("This is a simple test app deployed on Streamlit Cloud. The real NDMA dashboard will be added soon.")
 
-if __name__ == "__main__":
-    app.run(debug=True)
+st.success("Streamlit App Loaded Successfully!")
